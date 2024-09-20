@@ -1,7 +1,7 @@
 function addition(){
-    var x = document.getElementById("num1").value;
-    var y = document.getElementById("num2").value;
+    var x = parseFloat(document.getElementById("num1").value);
+    var y = parseFloat(document.getElementById("num2").value);
     var z = x + y;
-    output=document.getElementById("output");
-    output.innerHTML=z;
+    var output = document.getElementById("output");
+    output.innerHTML = z;
 }
