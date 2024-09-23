@@ -3,9 +3,24 @@
   <head>
     <title>Q4</title>
     <meta charset="UTF-8">
-    <script src="Q4.js" defer></script>
   </head>
   <body>
     <h1>Question 4</h1>
+    <hr>
+    <script>
+      var numValues = parseInt(prompt("How many numbers would you like to average?"));
+      var values = new Array(numValues);
+      for (var i = 0; i < numValues; i++) {
+        values[i] = parseFloat(prompt("Enter value " + (i + 1) + ":"));
+      }
+      var total = 0;
+      for (var i = 0; i < numValues; i++) {
+        total += values[i];
+      }
+      var mean = total / numValues;
+      document.write("Total: " + total + "<br>");
+      document.write("Mean: " + mean + "<br>");
+    </script>
+    <hr>
   </body>
 </html>
