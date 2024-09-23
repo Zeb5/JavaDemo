@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Q5</title>
+        <meta charset="UTF-8">
+        <script src="Q5.js" defer></script>
+    </head>
+    <body>
+        <h1>Interest Calculator</h1>
+        <form onsubmit="return false;">
+            <label for="Balance">Current Balance:</label>
+            <input type="number" id="Balance" required>
+            <br><br>
+            <label for="Interest">Interest Rate (e.g. 0.04 for 4%):</label>
+            <input type="number" id="Interest" required step="0.01">
+            <br><br>
+            <label for="DesiredBalance">Desired Balance:</label>
+            <input type="number" id="DesiredBalance" required>
+            <br><br>
+            <button onclick="calculateInterest()">Calculate</button>
+        </form>
+        <div id="output"></div>
+    </body>
+</html>
